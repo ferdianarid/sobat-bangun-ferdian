@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Source Sans Pro";
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Source Sans Pro";
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: local("Source Sans Pro"), url(/public/fonts/SourceSansPro-Bold.ttf) format("ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: local("Source Sans Pro"), url(/public/fonts/SourceSansPro-Semibold.ttf) format("ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: local("Source Sans Pro"), url(/public/fonts/SourceSansPro-Regular.ttf) format("ttf");
+    font-weight: 400;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.description-text {
+    @apply text-[14px] leading-[21px] font-normal;
+}
+
+.medium-text {
+    @apply text-[16px] leading-[19.2px];
+}
+
+.small-text {
+    @apply text-[14px] leading-[21px] font-normal;
+}
+
+.caption-text {
+    @apply text-[12px] leading-[18px] text-grey-600 font-normal;
+}
+
+.footer-link {
+    @apply font-normal text-[16px] leading-[35.2px] text-white;
+}
+
+.button-md-navbar {
+    @apply w-fit leading-[20.11px] font-semibold py-[10px] px-[16px] rounded-[6px] border-none text-[16px] transition-all duration-300;
+}
+
+.carousel-button {
+    @apply absolute border border-primary-700 bottom-[48%] z-50 flex items-center justify-center w-[48px] h-[48px] bg-white rounded-none;
+}

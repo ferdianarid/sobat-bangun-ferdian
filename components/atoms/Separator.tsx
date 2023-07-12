@@ -1,0 +1,1 @@
+export const HorizontalSeparator = () => <div className="w-full border-t border-grey-200"></div>
