@@ -16,7 +16,10 @@ interface IRootLayout {
 export default function RootLayout({ children }: IRootLayout) {
   return (
     <html lang="en">
-      <link rel="icon" href="/icon.png" />
+      <head>
+        <link rel="icon" href="/icon.png" />
+        <link href="https://cdn.jsdelivr.net/npm/source-sans-pro@3.6.0/source-sans-pro.min.css " rel="stylesheet" />
+      </head>
       <body>
         <Navbar />
         <Breadcrumb />
